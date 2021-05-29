@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Instagram post</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+     rel="stylesheet" 
+     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+     crossorigin="anonymous">
+     <link rel="stylesheet" href="styles.css">
+     <script src="https://kit.fontawesome.com/d070f90729.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   
+    <!--  Nav bar ---->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid" >
+            <a class="navbar-brand" href="#"><img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo-2.png" alt="Instagram Logo PNG" height="50" ></a>
+            <form>     
+              
+               <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create a new post
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            
+                            <div class="modal-body">
+                               <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                    <label for="floatingTextarea">Description</label>
+                               </div>
+                               <div class="form-floating mt-3">
+                                   <button type="button" class="btn btn-outline-secondary"><i class="fas fa-camera"></i></button>
+                                   <button type="button" class="btn btn-outline-secondary"><i class="fas fa-map-marker-alt"></i></button>
+                                         
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+
+                                    <div>
+                                        <button type="button" class="btn  btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                <div class="btn-group">
+                    <button class="btn  btn-sm dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span><i class="fas fa-cog"></i></span> 
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <hr>
+                        <li><a class="dropdown-item" href="#">Log out</a></li>
+
+                    </ul>           
+                </div>
+          </form>
+        </div>
+    </nav>
+    <!--Nav bar-->
+
+     
+    <!--Btn group -->
+                      
+            <div class="panel text-center my-2" id="togglePanel">
+                
+                <div class=" btn-group-md btn-toggle ">
+                    <button class="btn btn-toggle" data-toggle="tab" data-target="#gallery-thumbs"><img src=" http://cdn.onlinewebfonts.com/svg/img_510455.png" alt="" height="15" ></button>
+                    <button class="btn btn-toggle" data-toggle="tab" data-target="#gallery-scroll"><img src="https://cdn.iconscout.com/icon/free/png-256/rounded-square-459344.png" alt="" height="15" ></button>
+                </div>
+            </div>
+<!-- Btn group -->
+<!-- Contenido -->
+     
+     <div class="panel-body tab-content ">
+        <div class="tab-pane " id="gallery-scroll" > <!-- scroll section-->
+    
+            <div class="col-6 mx-auto" style="width: 600px">
+
+               <div class="card rounded-0 mb-3" >
+                    <div class="row card-title m-1">
+                        <div class="col-10 text-left  "><p class="fw-bold">Random Pic</p></div>
+                        <div class="col-2 text-right" ><p>15/25</p></div>
+                    </div>
+                    <div class="card-body m-0">
+                        <img src="http://placeimg.com/600/423/nature" class="rounded-0 mx-0" alt="..." style="width: 100%" >
+                        <p class="fw-bold">42 likes</p>
+                        <p >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="comment small">&#9825 Comment... </p> 
+                    </div>                       
+              </div> <!-- card-->
+
+              <div class="card rounded-0 mb-3" >
+                    <div class="row card-title m-1">
+                        <div class="col-10 text-left  "><p class="fw-bold">Random Pic</p></div>
+                        <div class="col-2 text-right" ><p>19/25</p></div>
+                    </div>
+                    <div class="card-body m-0">
+                        <img src="http://placeimg.com/600/423/nature" class="rounded-0 mx-0" alt="..." style="width: 100%" >
+                        <p class="fw-bold">16 likes</p>
+                        <p >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="comment small">&#9825 Comment... </p> 
+                    </div>                       
+              </div> <!-- card-->
+
+              <div class="card rounded-0 mb-3" >
+                    <div class="row card-title m-1">
+                        <div class="col-10 text-left  "><p class="fw-bold">Random Pic</p></div>
+                        <div class="col-2 text-right" ><p>11/25</p></div>
+                    </div>
+                    <div class="card-body mx-0">
+                        <img src="http://placeimg.com/600/423/nature" class="rounded-0 mx-0" alt="..." style="width: 100%" >
+                        <p class="fw-bold">200 likes</p>
+                        <p >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="comment small">&#9825 Comment... </p> 
+                    </div>                       
+              </div> <!-- card-->
+            
+            
+            </div>
+           
+        </div> <!-- scroll section-->
+        
+
+        <!-- gallery  section-->
+        <div class="tab-pane active text-center" id="gallery-thumbs">
+            
+             <div class="container-fluid" id="gallery">
+                <div class="row " >
+                    <div class="col-4 p-1" ><img src="http://placeimg.com/600/423/nature" alt=""  width="100%"></div>
+                    <div class="col-4 p-1"><img src="http://placeimg.com/600/423/nature" alt=""  width="100%"></div>
+                    <div class="col-4 p-1"><img src="http://placeimg.com/600/423/nature" alt=""  width="100%"></div>
+                </div>
+                <div class="row ">
+                    <div class="col-4 p-1" ><img src="http://placeimg.com/600/423/nature" alt=""  width="100%"></div>
+                    <div class="col-4 p-1"><img src="http://placeimg.com/600/423/nature" alt=""  width="100%"></div>
+                    <div class="col-4 p-1"><img src="http://placeimg.com/600/423/nature" alt=""  width="100%"></div>
+                </div>
+                <div class="row ">
+                    <div class="col-4 p-1" ><img src="http://placeimg.com/600/423/nature" alt=""  width="100%"></div>
+                    <div class="col-4 p-1"><img src="http://placeimg.com/600/423/nature" alt=""  width="100%"></div>
+                    <div class="col-4 p-1"><img src="http://placeimg.com/600/423/nature" alt=""  width="100%"></div>
+                </div>
+            </div>
+        </div>
+     <!-- gallery section -->
+
+      </div> <!-- tab content-->
+
+      
+
+        <!-- Scripts starts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
